@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior Asare</title>
+    <link rel="stylesheet" href="Style/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="Images/person-icon.png">
+
+</head>
+    <body>
+        <div class="navigation">
+            <div class="topnav">
+                
+                <img src="Images/person-icon.png" alt="person-icon">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                <a class="active" href="contact-me.html">Contact</a>
+                <a href="work.html">Work</a>
+                <a href="index.html">About</a>
+
+
+            </div>
+        </div>
+        
+        
+    
+
+        <div class="row">
+            <div class="colL">
+                <div class="header">
+                    <h1>
+                        Don't be a stranger
+                        <br>
+                        <strong>just say hello.</strong>
+                    </h1>
+                </div>
+                
+                <div class="left-side" style="font-size: 120%;">
+                    <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be a part of your visions.</p>
+                    <p>
+                        <label>Need help?</label>
+                        <br>
+                        <strong>juniorrasare@outlook.com</strong>
+                    </p>
+                    <p>
+                        <label>Prefer a call?</label>
+                        <br>
+                        <strong>07903 113345</strong>
+                    </p>
+                    <div class="social-menu">
+                        <ul> 
+                            <li><a href="https://www.instagram.com/juniorasaree/"><img src="Images/Instagram-Logo.png" height="45px" style="margin-top: -100px; transform:scale(.65)"></a></li> <!-- instead download images of these icons -->
+                            <li><a href="https://twitter.com/juniorasaree"><img src="Images/Twitter-Logo.png" height="45px" style="margin-top: -6px;"></a></li>
+                            <li><a href="https://www.linkedin.com/in/daniel-asare-1728a8195/"><img src="Images/Linked-In.png" height="45px" style="margin-top: -6px;"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="colR">
+                
+                <div class="right-side">
+                    <form action="https://formspree.io/juniorasaree@gmail.com" method="POST">
+                        <p>
+                            <label>Full name: *</label> <br>
+                            <input type="text" id="name" name="name" value="" placeholder="Name" size="34" required>
+                            
+                        </p>
+                        <p>
+                            <label>Email: *</label> <br>
+                            <input type="email" id="email" name="email" value="" placeholder="Email" size="40" required>
+                        </p>
+                        <p>
+                            <label>Message: *</label> <br>
+                            <textarea id="message" name="message" placeholder="Say hello!" required></textarea>
+                        
+                        </p>
+
+                        <button class="button" id="submit">SEND OVER</button>
+                    </form>
+                </div>
+                <br>
+                
+            </div>
+        </div>
+
+        <hr>
+        <br>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                
+                if (x.className === "topnav") {
+                x.className += " responsive";
+                } 
+                
+                else {
+                x.className = "topnav";
+                }
+            }
+        </script>
+    </body>
+
+</html>
