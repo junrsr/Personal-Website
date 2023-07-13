@@ -110,7 +110,7 @@ body .about-me li{
 input{
     padding: 2px 10px;    
     border-radius: 4px;
-    width: 70%;
+    width: 100%;
     color: #A1998D;
     border: 1px solid grey;
     background-color: #153030;
@@ -124,7 +124,7 @@ input::placeholder, textarea::placeholder{
 textarea{
     padding: 2px 10px;
     border-radius: 4px;
-    width: 70%;
+    width: 100%;
     height: 275px;
     color: #A1998D;
     border: 1px solid grey;
@@ -137,16 +137,23 @@ textarea{
 
 .row{
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
 
 .colL{
-    margin-left: 30px;
+    margin-left: 5%;
 }
 
 .colR{
     margin-right: 30px;
+}
+
+@media (min-width: 1000px) {
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+    
 }
 
 label{
@@ -162,6 +169,8 @@ label{
     width: 100vw;
     margin-left: -8px;
     margin-top: -8px;
+    /*position: fixed;*/
+    z-index: 1000;
 }
 
 .topnav {
@@ -216,15 +225,15 @@ label{
 }
 
 .social-menu ul{
-    position: absolute;
+    position: relative;
     left: -1%;
     display: flex;
-    transform:translate(-50%, -5);
+    transform:translate(-50%, -1);
 }
 
 .social-menu ul li{
     list-style: none;
-    margin: 0 15px;
+    margin: 0 22px;
     vertical-align: bottom;
 }
 
@@ -254,16 +263,19 @@ label{
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 975px) {
-    .topnav a:not(:first-child) {display: none;}
+    .topnav a{display: none;}
     .topnav a.icon {
       float: right;
       display: block;
     }
-  }
+}
   
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 975px) {
-    .topnav.responsive {position: relative;}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 975px) {
+    .topnav.responsive {
+        position: relative;
+        margin-top: 75px;
+    }
     .topnav.responsive a.icon {
       position: absolute;
       right: 0;
@@ -273,5 +285,6 @@ label{
       float: none;
       display: block;
       text-align: left;
+      
     }
-  }
+}
