@@ -31,16 +31,8 @@ h1{
     font-size: 200%;
 }
 
-body .text{
-    height: 150px;
-    width: 60%;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: left;
-}
-
 body .text img{
-    padding: 75px;
+    padding: 6%;
 }
 
 body .bottom-text{
@@ -63,11 +55,48 @@ body .bottom-text{
     font-size: 90%;
 }
 
+
+
+
+
+@media (max-width:600px){
+    
+
+    .introduction{
+        margin-right: 7%;
+        width: 100vh;
+        display: block;
+    }
+    
+    .introduction h1{
+        font-size: 200%;
+        float: right;
+    }
+
+    .introduction h3{
+        float: right;
+        text-align: left;
+    }
+    
+    .introduction a{
+        float: right;
+    }
+}
+
 .introduction{
-    margin-right: 450px;
-    margin-left: 150px;
+    margin-right: 50%;
+    margin-left: 7%;
     margin-top: 0px;
     height: 115vh;
+    display: block;
+}
+
+.introduction h1{
+    font-size: 400%;
+}
+
+.introduction .bold{
+    color: #ababab;
 }
 
 .background-image{
@@ -79,24 +108,24 @@ body .bottom-text{
     margin-top: -250px;
 }
 
-body .introduction .introduction-text{
+.introduction .introduction-text{
     font-size: 300%;
 }
 
-body .introduction button{
+.introduction button{
     margin-top: 50px;
 }
 
-body .about-me{
+.about-me{
     margin-left: 100px;
     height: 100vh;    
 }
 
-body .about-me li{
+.about-me li{
     margin-left: 1000px;
 }
 
-body .about-me li{
+.about-me li{
     list-style: none;
 }
 
@@ -298,10 +327,6 @@ label{
     transform: scale(1.1);
 }
 
-.professional-skills .text{
-    font-size: 120%;
-}
-
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
@@ -334,4 +359,44 @@ label{
       text-align: left;
       
     }
+}
+
+.introRow{
+    display: grid;
+    grid-gap: 20px;
+}
+
+.introRow img{
+    height: 45vh;
+    width: auto;
+}
+
+@media (min-width: 850px) {
+    .introRow {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+
+    .introRow img{
+        height: 60vh;
+        width: auto;
+    }
+    
+}
+
+#introLine{
+    margin-top: 7%;
+}
+
+.right{
+    margin-top: 8%;
+    padding: 5%;
+}
+
+.text{
+    margin-bottom: 5%;
+    vertical-align: middle;
+    height: auto;
+    width: 70%;
+    display: inline-block;
 }
