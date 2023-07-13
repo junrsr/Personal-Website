@@ -31,11 +31,11 @@ h1{
     font-size: 200%;
 }
 
-body .text img{
+.text img{
     padding: 6%;
 }
 
-body .bottom-text{
+.bottom-text{
     height: 100px;
     width: 60%;
     display: block;
