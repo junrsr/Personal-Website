@@ -45,10 +45,22 @@ body .text img{
 
 body .bottom-text{
     height: 100px;
-    width: 40%;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 120%;
+    width: 60%;
+    display: block;
+    margin-bottom: 5%;
+}
+
+.bottom-text h1{
+    font-size: 150%;
+    padding: 5%;
+}
+
+.bottom-text h3{
+    font-size: 107%;
+}
+
+.bottom-text p{
+    font-size: 90%;
 }
 
 .introduction{
@@ -99,7 +111,7 @@ body .about-me li{
     display: inline-block;
     border-radius: 4px;
     transition: .6s;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .button:hover{
@@ -210,10 +222,45 @@ label{
 }
 
 .project-section{
-    height: 150vh;
-    width: 99.244vw;
+    height: 120vh;
     margin-left: -10px;
     color: white;
+    padding-bottom: 5%;
+    overflow-y: auto;
+}
+
+@media screen and (min-width: 770px) {
+    .project-section{
+        height: 110vh;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .project-section{
+        height: 100vh;
+    }
+}
+
+.project-section img{
+    height: 20vh;
+    width: auto;
+}
+
+.project-section p{
+    text-align: center;
+    padding: 4%;
+    font-size: 100%;
+}
+
+.project-section h1{
+    font-size: 200%;
+    margin-top: 0px;
+}
+
+.project-section h2{
+    text-align: center;
+    color: grey;
+    font-size: 100%;
 }
 
 .col img{
